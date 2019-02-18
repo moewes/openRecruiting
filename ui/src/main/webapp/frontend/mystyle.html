@@ -1,0 +1,36 @@
+<custom-style>
+    <style>
+    html {
+      --material-font-family: 'Helvetica Neue', Arial, sans-serif;
+      --material-primary-color: hsl(214, 86%, 55%);
+    }
+
+     app-header {
+           background: var(--material-primary-color);
+            color: var(--material-primary-contrast-color);
+     }
+
+    app-header paper-icon-button {
+      --paper-icon-button-ink-color: #fff;
+    }
+
+    app-drawer-layout {
+      --app-drawer-layout-content-transition: margin 0.2s;
+    }
+
+    app-drawer {
+      --app-drawer-content-container: {
+        background-color: var(--material-secondary-background-color);
+        color: var(--material-primary-text-color);
+      }
+    }
+
+    .drawer-content {
+      margin-top: 80px;
+      height: calc(100% - 80px);
+      overflow: auto;
+    }
+
+
+    </style>
+</custom-style>
