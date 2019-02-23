@@ -9,7 +9,7 @@ import org.openrecruiting.ui.layouts.NewLayout;
 public class SettingsView extends VerticalLayout {
 
   public SettingsView() {
-    add(new Text("Settings"));
+    add(new Text(getTranslation("settings")));
   }
 
 }
