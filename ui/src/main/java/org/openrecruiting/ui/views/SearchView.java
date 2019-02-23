@@ -7,12 +7,12 @@ import com.vaadin.flow.router.Route;
 import org.openrecruiting.ui.components.PaperCard;
 import org.openrecruiting.ui.layouts.NewLayout;
 
-@Route(value = "test", layout = NewLayout.class)
-public class NewApplicationView extends VerticalLayout {
+@Route(value = "search", layout = NewLayout.class)
+public class SearchView extends VerticalLayout {
 
-  public NewApplicationView() {
+  public SearchView() {
 
-    add(new Text("Hallo Welt"));
+    add(new Text("Search"));
 
     PaperCard card = new PaperCard();
 
