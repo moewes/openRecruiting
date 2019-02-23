@@ -7,7 +7,6 @@ import com.vaadin.flow.i18n.I18NProvider;
 import javax.annotation.PostConstruct;
 import java.text.MessageFormat;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 @VaadinServiceEnabled
@@ -17,10 +16,10 @@ public class LocaliseService implements I18NProvider {
   private final Locale LOCALE_DE = new Locale("de", "DE");
   private final Locale LOCALE_EN = new Locale("en", "GB");
 
-  private List<Locale> locales = Collections
+  private final List<Locale> locales = Collections
           .unmodifiableList(Arrays.asList(LOCALE_DE, LOCALE_EN));
 
-  private Map<Locale, ResourceBundle> bundles = new HashMap<>();
+  private final Map<Locale, ResourceBundle> bundles = new HashMap<>();
 
   @PostConstruct
   public void init() {
@@ -50,7 +49,6 @@ public class LocaliseService implements I18NProvider {
       if (params.length > 0) {
         value = MessageFormat.format(value, params);
       }
-
 
     return value;
   }

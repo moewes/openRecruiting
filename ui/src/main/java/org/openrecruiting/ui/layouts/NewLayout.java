@@ -1,7 +1,6 @@
 package org.openrecruiting.ui.layouts;
 
 import com.vaadin.flow.component.HasElement;
-import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.dependency.HtmlImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.notification.Notification;

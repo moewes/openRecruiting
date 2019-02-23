@@ -17,6 +17,7 @@ public class PaperIconItem extends Component implements HasComponents, HasSize {
     setWidth("100%");
   }
 
+  @SuppressWarnings("unchecked")
   public void addClickListener(
           ComponentEventListener<ClickEvent<PaperIconButton>> listener) {
     addListener(ClickEvent.class, (ComponentEventListener) listener);

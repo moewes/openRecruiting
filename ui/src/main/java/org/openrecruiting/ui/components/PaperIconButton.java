@@ -8,6 +8,7 @@ import com.vaadin.flow.component.dependency.HtmlImport;
 @HtmlImport("bower_components/iron-icons/iron-icons.html")
 public class PaperIconButton extends Component implements HasComponents {
 
+  @SuppressWarnings("unchecked")
   public void addClickListener(
           ComponentEventListener<ClickEvent<PaperIconButton>> listener) {
     addListener(ClickEvent.class, (ComponentEventListener) listener);
